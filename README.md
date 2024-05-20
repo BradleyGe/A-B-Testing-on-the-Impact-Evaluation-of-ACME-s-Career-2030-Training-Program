@@ -83,8 +83,9 @@ According to the results, PSM were chosen because:
 3. PSM has more matched pairs
 
 ## **Instrumental Variable Analysis**  
-- The experiment suggests that external factors such as **manager intervention** and **individual motivation** may influence the training attendance rate. Anecdotal evidence suggests that managers might intervene on behalf of their direct reports to ensure their inclusion in the program. 
+- The experiment suggests that external factors such as **manager intervention** and **individual motivation** may influence the training attendance rate. Anecdotal evidence suggests that managers might intervene on behalf of their direct reports to ensure their inclusion in the program.
 - However, as these factors were not directly observed in the experiment, it is crucial for the team to employ **Instrumental Variable Analysis** to address potential confounding effects.
+
 ![WhatsApp Image 2024-05-20 at 00 22 24_19f8ad18](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/da45a712-de8e-4842-87bc-6bd5e4b4f396)
 
 
