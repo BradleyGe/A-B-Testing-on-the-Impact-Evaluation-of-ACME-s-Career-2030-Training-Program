@@ -67,8 +67,9 @@ Compute standardized mean difference to assess if each covariate 𝑗 has simila
 
 ![WhatsApp Image 2024-05-19 at 23 31 48_f8f69b05](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/c7bad05d-48f7-447a-87ca-a2ad58c16482)
 
-- When SMD is 
+When SMD is larger than 0.2(indicated by the red dashed line), there is a large discrepency on that feature for control and treatment groups. Even though this is an observational experiment where treatment group and control group were randomly chosen, there are 9 features that have SMD larger than 0.2, indicating very imbalanced groups.  For example, for the feature distance from home to the training facility, the mean and standard deviation is very different for employees in control and treatment groups (mean: 15.69 miles V.S. 25.61 miles).This happened due to the compliance issue where people that were chosen for the training did not choose to participate. This discrepency will lead to inaccurate reflection of the effect of training program on the promotion rate as you cannot decide whether it is the training program or the distance from home that leads to difference in promotion rate. 
 
+Therefore, **Matching** is used to solve this problem.
 
 
 
