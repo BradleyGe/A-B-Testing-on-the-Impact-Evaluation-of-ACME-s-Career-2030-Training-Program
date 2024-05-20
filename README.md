@@ -17,7 +17,7 @@ Your analytics consulting group, specializing in causal inference, is one of six
 Available Data
 The dataset comprises 6,000 employee records with the following attributes:
 
-empid: Employee ID  
+-empid: Employee ID  
 promoted: Whether the employee was promoted within a year of training  
 training: Participation in the Career 2030 program  
 manager: Employee managerial status  
