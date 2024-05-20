@@ -53,7 +53,8 @@ The dataset comprises 6,000 employee records with the following attributes:
 
 ![WhatsApp Image 2024-05-19 at 22 00 21_5cca2e84](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/4672d1cb-de75-4759-8bdb-b28984ef0fa3)
 
-Compute standardized mean difference to assess **if each covariate 𝑗 has similar means between matched treatment 𝑇 and control 𝐶 groups**  
+## *Standardized Mean Difference*
+Compute standardized mean difference to assess if each covariate 𝑗 has similar means between matched treatment 𝑇 and control 𝐶 groups 
 
 - Balanced: 𝑆𝑀𝐷𝑗 < 0.1
 - Investigate: 0.1 ≤ 𝑆𝑀𝐷𝑗 ≤ 0.2
