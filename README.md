@@ -40,7 +40,9 @@ The dataset comprises 6,000 employee records with the following attributes:
 -disthome: Distance from training facility to employee's home  
 -testscore: Score in a standard test during the recruitment process  
 
-
+### Data Processing
+![WhatsApp Image 2024-05-19 at 23 39 34_3823a68d](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/f348a86b-9e76-45eb-a7f7-4a230885c689)  
+Due to the skewness of features, we applied log transformation to satisfy the normality assumption that statistical tests require.
 
 
 ## *Exploratory Data Analysis*
