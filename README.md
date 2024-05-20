@@ -102,9 +102,13 @@ b. **Exclusion**: There is no obvious relationship between the distance from emp
 c. **Exogeneity**: The distance variable is independent of the two unmeasured covariates, individual’s motivation and manager intervention. 
 
 ## **Two Stage Least Square Regression**
-First Stage: Use Training Program as Target Variable  
+**First Stage**: Use Participation in the Training Program as Target Variable  
 
-![image](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/0603d984-0c87-48a3-8570-c6877a6e738c)
+![image](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/2b5414b0-cbcb-4b87-a2c7-4b14d0a432f0)
+
+**Second Stage**: Use Promotion as Target Variable  
+
+![image](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/ea435184-cfd7-484f-adb1-3ee7ecb0fe18)
 
 
 
