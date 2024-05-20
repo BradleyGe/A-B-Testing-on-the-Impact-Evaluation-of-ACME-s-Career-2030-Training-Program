@@ -18,27 +18,27 @@ Available Data
 The dataset comprises 6,000 employee records with the following attributes:
 
 -empid: Employee ID  
-promoted: Whether the employee was promoted within a year of training  
-training: Participation in the Career 2030 program  
-manager: Employee managerial status  
-raise: Merit increase in the last review cycle  
-salary: Employee's salary bracket  
-children: Number of children  
-mstatus: Marital status  
-age: Age at promotion  
-sex: Gender  
-edu: Years of education at promotion  
-vacation: Vacation days taken in the year prior to promotion  
-weight: Weight at the last physical examination  
-height: Height at the last physical examination  
-hrfriend: Friend within the Human Resources department  
-cxofriend: C-level friend within the organization  
-insurance: Type of insurance coverage  
-flexspend: Participation in the Flexible Spending Account program  
-retcont: Participation in the 401k retirement saving program  
-race: Race  
-disthome: Distance from training facility to employee's home  
-testscore: Score in a standard test during the recruitment process  
+-promoted: Whether the employee was promoted within a year of training  
+-training: Participation in the Career 2030 program  
+-manager: Employee managerial status  
+-raise: Merit increase in the last review cycle  
+-salary: Employee's salary bracket  
+-children: Number of children  
+-mstatus: Marital status  
+-age: Age at promotion  
+-sex: Gender  
+-edu: Years of education at promotion  
+-vacation: Vacation days taken in the year prior to promotion  
+-weight: Weight at the last physical examination  
+-height: Height at the last physical examination  
+-hrfriend: Friend within the Human Resources department  
+-cxofriend: C-level friend within the organization  
+-insurance: Type of insurance coverage  
+-flexspend: Participation in the Flexible Spending Account program  
+-retcont: Participation in the 401k retirement saving program  
+-race: Race  
+-disthome: Distance from training facility to employee's home  
+-testscore: Score in a standard test during the recruitment process  
 
 
 
