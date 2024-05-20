@@ -1,7 +1,7 @@
 # A/B Testing on the Impact of ACME's Career 203 Training program
 
 •⁠ Project:      A/B Testing + Observational Study  
-•⁠ Duration:     Sept.2023 - Oct.2023    
+•⁠ Duration:     Feb.2024 - Mar.2024    
 •⁠ Team Members: Bradley Ge, , Valerie Chan, Jim Tiao, Irene Wang, Ella Lee  
 
 ## *Background*
@@ -43,7 +43,28 @@ The dataset comprises 6,000 employee records with the following attributes:
 
 
 
-## *Data Preparation*
+## *Exploratory Data Analysis*
+
+- Approximately 38.2% (N = 2,291) participated in the Career 2030 training program, while 61.8% (N = 3,709) did not participate.
+- Managers represent 14.4% (N = 864) of the workforce, with non-managers making up 85.6% (N = 5,136).
+- Around 53.6% (N = 3,216) of the employees have a friend in HR, while 55.05% (N = 3,303) have a friend at the C-level.
+- For benefits participation, 66.43% (N = 3,986) are enrolled in the flexible spending account.
+- Around 87.92% (N = 5,275) contribute to a retirement savings plan.
+
+![WhatsApp Image 2024-05-19 at 22 00 21_5cca2e84](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/4672d1cb-de75-4759-8bdb-b28984ef0fa3)
+
+Compute standardized mean difference to assess **if each covariate 𝑗 has similar means between matched treatment 𝑇 and control 𝐶 groups**  
+
+- Balanced: 𝑆𝑀𝐷𝑗 < 0.1
+- Investigate: 0.1 ≤ 𝑆𝑀𝐷𝑗 ≤ 0.2
+- Imbalanced: 0.2 < 𝑆𝑀𝐷𝑗
+
+![WhatsApp Image 2024-05-19 at 23 31 48_f8f69b05](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/c7bad05d-48f7-447a-87ca-a2ad58c16482)
+
+
+
+
+
 
 **1. Issues related to application data**
 *   ***Duplicate IDs:*** The uniqueness of IDs possibly from data input error. As this can lead to duplicates when merging with the credit status data, we will remove these duplicate IDs from the application dataset.
