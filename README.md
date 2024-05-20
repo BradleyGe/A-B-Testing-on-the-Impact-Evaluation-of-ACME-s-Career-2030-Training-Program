@@ -125,13 +125,13 @@ c. **Exogeneity**: The distance variable is independent of the two unmeasured co
 ## **Recommendations** 
 
 - **Training Program**:
- - Conduct experiments on reimbursing transportation costs for employees who participate in the training program
+  - Conduct experiments on reimbursing transportation costs for employees who participate in the training program
  
- - Focus on developing soft skills, particularly networking and communication, to boost promotion prospects
+  - Focus on developing soft skills, particularly networking and communication, to boost promotion prospects
   
- - Customize training to engage top performers for better career advancement opportunities
+  - Customize training to engage top performers for better career advancement opportunities
   
 
 - **Instrumental Variable Analysis**:
- - Improve the randomization in selecting treatment and control group to avoid imbalance in covariates that could cause confounding issues
+  - Improve the randomization in selecting treatment and control group to avoid imbalance in covariates that could cause confounding issues
 
