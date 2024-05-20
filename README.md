@@ -67,10 +67,35 @@ Compute standardized mean difference to assess if each covariate 𝑗 has simila
 
 ![WhatsApp Image 2024-05-19 at 23 31 48_f8f69b05](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/c7bad05d-48f7-447a-87ca-a2ad58c16482)
 
-When SMD is larger than 0.2(indicated by the red dashed line), there is a large discrepency on that feature for control and treatment groups. Even though this is an observational experiment where treatment group and control group were randomly chosen, there are 9 features that have SMD larger than 0.2, indicating very imbalanced groups.  For example, for the feature distance from home to the training facility, the mean and standard deviation is very different for employees in control and treatment groups (mean: 15.69 miles V.S. 25.61 miles).This happened due to the compliance issue where people that were chosen for the training did not choose to participate. This discrepency will lead to inaccurate reflection of the effect of training program on the promotion rate as you cannot decide whether it is the training program or the distance from home that leads to difference in promotion rate. 
+When SMD is larger than 0.2(indicated by the red dashed line), there is a large discrepency on that feature for control and treatment groups. Even though this is an observational experiment where treatment group and control group were randomly chosen, there are 9 covariates that have SMD larger than 0.2, indicating very imbalanced groups.  For example, for the feature distance from home to the training facility, the mean and standard deviation is very different for employees in control and treatment groups (mean: 15.69 miles V.S. 25.61 miles).This happened due to the compliance issue where people that were chosen for the training did not choose to participate. This discrepency will lead to inaccurate reflection of the effect of training program on the promotion rate as you cannot decide whether it is the training program or the distance from home that leads to difference in promotion rate. 
 
 Therefore, **Matching** is used to solve this problem.
+ 
+### **Matching**
+Three different matching methods are used: **1:1 Matching, Propensity Score Matching(PSM), and Inverse Probability of Treatment Weighting(IPTW)**
 
+After tuning the caliper, these three matching methods give the following results: 
+![WhatsApp Image 2024-05-20 at 00 05 03_f2b78629](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/1b7fb23c-f826-4b12-b6a5-ad73451c54a7)  
+
+According to the results, PSM were chosen because:
+1. It doesn't violate the positivity assumption
+2. only two features have SMD slightly higher than 0.1, while 1:1 Matching has 2 over 0.2
+3. PSM has more matched pairs
+
+### **Instrumental Variable Analysis**  
+- The experiment suggests that external factors such as **manager intervention** and **individual motivation** may influence the training attendance rate. Anecdotal evidence suggests that managers might intervene on behalf of their direct reports to ensure their inclusion in the program. 
+- However, as these factors were not directly observed in the experiment, it is crucial for the team to employ **Instrumental Variable Analysis** to address potential confounding effects.
+![WhatsApp Image 2024-05-20 at 00 22 24_19f8ad18](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/da45a712-de8e-4842-87bc-6bd5e4b4f396)
+
+
+## **Instrumental Variable**  
+An instrumental variable needs to satisfy the following three assumptions: **Relevance, Exclusion, Exogeneity**
+"Disthome", which is distance from home to the training facility, satisfies those three assumptions: 
+a. Relevance: The traveling distance and time is potentially associated with employees’ willingness to attend the training program. 
+b. Exclusion: There is no obvious relationship between the distance from employees’ home to facility and their promotional opportunities. 
+c. Exogeneity: The distance variable is independent of the two unmeasured covariates, individual’s motivation and manager intervention. 
+
+#
 
 
 
