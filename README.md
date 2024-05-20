@@ -1,0 +1,107 @@
+# A/B Testing on the Impact of ACME's Career 203 Training program
+
+•⁠ Project:      A/B Testing + Observational Study
+•⁠ Duration:     Sept.2023 - Oct.2023  
+•⁠ Team Members: Bradley Ge, , Valerie Chan, Jim Tiao, Irene Wang, Ella Lee  
+
+## *Background*
+
+ACME Manufacturing, a company with over 60,000 employees, has launched the Career 2030 training program aimed at fostering the career development of its workforce. Despite its ongoing nature, the initial data from a randomly selected cohort of employees who participated in the training a year earlier has recently become available. ACME's Chief People Officer prioritizes data-informed decision-making and seeks insights into the program's impact on employee promotion and retention.
+
+## *Data*
+
+### Raw Data
+[Kaggle] https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction
+1. Application History: 18 features, 438,557 rows
+![WhatsApp Image 2024-05-18 at 22 28 14_43a057b0](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/c60b7ae6-1247-4f09-ae7e-6183f2175d27)
+
+2. Credit: 3 features, 1,048,575 rows  
+![WhatsApp Image 2024-05-18 at 22 21 57_60e7529b](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/cd17a64d-3942-45fd-a854-a2f392fa7e5d)  
+
+## *Data Preparation*
+
+**1. Issues related to application data**
+*   ***Duplicate IDs:*** The uniqueness of IDs possibly from data input error. As this can lead to duplicates when merging with the credit status data, we will remove these duplicate IDs from the application dataset.
+*   ***Missing Values:*** More than 2m+ occupation type data points were missing. This might have arised from not being entered or collected. In this case we used predictive models to impute the data.
+
+**Step 1: Delete Duplicate IDs**  
+
+![WhatsApp Image 2024-05-19 at 17 51 15_53f70087](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/46e7f333-d38e-4888-b435-0eaeab95aae8)  
+Since there are only 5 duplicate IDs, we decided to simply remove them.
+
+**Step 2: Impute Missing Values**  
+
+![WhatsApp Image 2024-05-19 at 18 05 23_eebc8a89](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/e3fb9b6a-54bf-4a82-903f-a6c13a0d85f9)  
+
+Since 30% of the data have missing value in occupation, we believed that deleting them would lead to a big loss of data, and also research shows that occupation is a key factor deciding whether an applicant is qualified for a credit card, therefore, we would like to impute missing values using random forest classfier.
+
+To do so, we use data with no missing value as training data to train the model, and then use the random forest classfier to impute the missing value in occupation.  
+
+![WhatsApp Image 2024-05-19 at 18 03 29_cf2615de](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/36b4f8ae-51e7-4046-853e-bb2ea5811a61)  
+
+
+
+**2. Target Variable**  
+
+As target variable is not given, we need to define by ourselves.
+
+The status of applicants are given as follows:  
+0: 1-29 days past due  
+
+1: 30-59 days past due  
+
+2: 60-89 days overdue   
+
+3: 90-119 days overdue   
+
+4: 120-149 days overdue   
+
+5: Overdue or bad debts, write-offs for more than 150 days   
+
+C: paid off that month   
+
+X: No loan for the month  
+
+To classify, for those people who paid off that month, s/he will be calssfied as "good", and for those who were overdue, no matter how long (from 1 to 5), they will be considered "bad". For those who had no loan for that month(X), they will be exclued from the data as it doesn't help with deciding whether s/he will defafult or not.
+
+Also, we are given the feature Month_Balance: The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on.  
+
+Therefore, the target variable is: The percentage of months a person defaulted. The value of target variable ranges from 0 to 1, where 1 means a person defaults every month, and 0 means never default in any month.  
+
+The threshold for deciding whether a customer has good credit or not is 0.05, meaning if that customer defaults less than 5% of the months, s/he will be considered a good credit customer.  
+
+
+**3. Imbalance in Target Variable**  
+
+![WhatsApp Image 2024-05-19 at 19 01 34_4aed6894](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/f6d99eed-bf9d-48be-97df-8aa0423cf363)  
+Target Variable Distribution  
+
+
+Undersampling, Oversampling, and SMOTE  
+
+![WhatsApp Image 2024-05-19 at 19 05 29_e57b6173](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/f2b3d254-d7f1-4a2e-bcff-9f7dbb3b189f)  
+To deal with this extreme biased target variable, we used undersampling, oversampling, and SMOTE.
+
+
+## *Modeling & Model Evaluation*
+- Random Forest, KNN, and Logistic Regression are built
+- Cross Validation with 10 folds are used
+- Tuning was done with selected hyperparameters
+![WhatsApp Image 2024-05-19 at 21 42 15_8f3cc247](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/797a7974-138d-4483-9ddd-b2ebf8dab71f)
+
+- Random Forest on SMOTE gives the highest accuracy rate
+![WhatsApp Image 2024-05-19 at 21 22 28_0acfceb3](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/b7b1a0b9-4507-4274-8a9d-d37a9c7f935c)
+
+
+
+## *Deployment*  
+Potential issues and risks
+- Legal & Ethical issues: Model should be adjusted according to the laws: Fair Lending and Anti-Discrimination Laws
+  - Equal Credit Opportunity Act (ECOA): 
+    - The ECOA prohibits credit discrimination on the basis of race, color, religion, national origin, sex, marital status, age, receipt of income from public assistance programs, or the exercise of rights under the Consumer Credit Protection Act.
+  - Age Discrimination in Credit Act (ADCA):
+    - The ADCA prohibits discrimination in credit transactions based on age. Credit card issuers cannot use age as a sole reason for approving or denying credit.
+- Privacy: Secure applicant’s personal information and prevent disclosure
+- Transparency :The model’s decision-making process should be transparent to regulators, customers, and internal stakeholders
+
+
