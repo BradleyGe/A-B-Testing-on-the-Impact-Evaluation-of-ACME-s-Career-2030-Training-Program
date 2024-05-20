@@ -71,7 +71,7 @@ When SMD is larger than 0.2(indicated by the red dashed line), there is a large 
 
 Therefore, **Matching** is used to solve this problem.
  
-### **Matching**
+## **Matching**
 Three different matching methods are used: **1:1 Matching, Propensity Score Matching(PSM), and Inverse Probability of Treatment Weighting(IPTW)**
 
 After tuning the caliper, these three matching methods give the following results: 
@@ -82,7 +82,7 @@ According to the results, PSM were chosen because:
 2. only two features have SMD slightly higher than 0.1, while 1:1 Matching has 2 over 0.2
 3. PSM has more matched pairs
 
-### **Instrumental Variable Analysis**  
+## **Instrumental Variable Analysis**  
 - The experiment suggests that external factors such as **manager intervention** and **individual motivation** may influence the training attendance rate. Anecdotal evidence suggests that managers might intervene on behalf of their direct reports to ensure their inclusion in the program. 
 - However, as these factors were not directly observed in the experiment, it is crucial for the team to employ **Instrumental Variable Analysis** to address potential confounding effects.
 ![WhatsApp Image 2024-05-20 at 00 22 24_19f8ad18](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/da45a712-de8e-4842-87bc-6bd5e4b4f396)
@@ -95,7 +95,7 @@ a. Relevance: The traveling distance and time is potentially associated with emp
 b. Exclusion: There is no obvious relationship between the distance from employees’ home to facility and their promotional opportunities. 
 c. Exogeneity: The distance variable is independent of the two unmeasured covariates, individual’s motivation and manager intervention. 
 
-#
+## **Two Stage Least Square Regression**
 
 
 
