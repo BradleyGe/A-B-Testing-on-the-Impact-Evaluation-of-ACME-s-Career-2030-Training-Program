@@ -72,9 +72,10 @@ When SMD is larger than 0.2(indicated by the red dashed line), there is a large 
 Therefore, **Matching** is used to solve this problem.
  
 ## **Matching**
-Three different matching methods are used: **1:1 Matching, Propensity Score Matching(PSM), and Inverse Probability of Treatment Weighting(IPTW)**
+Three different matching methods are used: **1:1 Matching, Propensity Score Matching(PSM), and Inverse Probability of Treatment Weighting(IPTW)**  
 
-After tuning the caliper, these three matching methods give the following results: 
+After tuning the caliper, these three matching methods give the following results:  
+
 ![WhatsApp Image 2024-05-20 at 00 05 03_f2b78629](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/1b7fb23c-f826-4b12-b6a5-ad73451c54a7)  
 
 According to the results, PSM were chosen because:
