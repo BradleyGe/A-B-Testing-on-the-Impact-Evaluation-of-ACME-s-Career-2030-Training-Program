@@ -91,8 +91,10 @@ According to the results, PSM were chosen because:
 
 
 ## **Instrumental Variable**  
-An instrumental variable needs to satisfy the following three assumptions: **Relevance, Exclusion, Exogeneity**
-"Disthome", which is distance from home to the training facility, satisfies those three assumptions: 
+An instrumental variable needs to satisfy the following three assumptions: **Relevance, Exclusion, Exogeneity**  
+
+"Disthome", which is distance from home to the training facility, satisfies those three assumptions:  
+
 a. Relevance: The traveling distance and time is potentially associated with employees’ willingness to attend the training program. 
 b. Exclusion: There is no obvious relationship between the distance from employees’ home to facility and their promotional opportunities. 
 c. Exogeneity: The distance variable is independent of the two unmeasured covariates, individual’s motivation and manager intervention. 
