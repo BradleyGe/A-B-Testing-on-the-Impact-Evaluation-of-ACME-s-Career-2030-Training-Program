@@ -1,12 +1,15 @@
 # A/B Testing on the Impact of ACME's Career 203 Training program
 
-•⁠ Project:      A/B Testing + Observational Study
-•⁠ Duration:     Sept.2023 - Oct.2023  
+•⁠ Project:      A/B Testing + Observational Study  
+•⁠ Duration:     Sept.2023 - Oct.2023    
 •⁠ Team Members: Bradley Ge, , Valerie Chan, Jim Tiao, Irene Wang, Ella Lee  
 
 ## *Background*
 
 ACME Manufacturing, a company with over 60,000 employees, has launched the Career 2030 training program aimed at fostering the career development of its workforce. Despite its ongoing nature, the initial data from a randomly selected cohort of employees who participated in the training a year earlier has recently become available. ACME's Chief People Officer prioritizes data-informed decision-making and seeks insights into the program's impact on employee promotion and retention.
+
+## *Problem*
+Your analytics consulting group, specializing in causal inference, is one of six firms being considered by ACME to continuously monitor the effects of various employee programs, including Career 2030. As a proof of concept, the client desires a demonstration of your analysis approach, insights derived from the data, and recommendations for program optimization. The dataset provided by the client originates from a randomized controlled trial, where 5% of employees were randomly selected for training while another 5% were not. However, external factors such as interventions by managers and individual motivations may have influenced participation. There were also anecdotal evidence that some managers intervened for direct reports to be part of the program. It is also a fact that some motivated employees may be more interested in the training program as well as upward mobility in their careers. Your task is to analyze this dataset within three weeks, extract insights, and provide actionable recommendations to the client, demonstrating your competence in supporting data-informed decision-making.
 
 ## *Data*
 
