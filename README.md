@@ -110,10 +110,28 @@ c. **Exogeneity**: The distance variable is independent of the two unmeasured co
 
 ![image](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/ea435184-cfd7-484f-adb1-3ee7ecb0fe18)
 
+## **Results & Conclusion**
+- Attending training program is **positively & causally** related to getting promotion 
+- **Increases** the chance of promotion by **87.6%**
 
+- Employees with higher chance to get promoted may have the following characteristic:
+ 
+1. Took fewer vacation days last year
 
+2. Have HR & C-executive connections
+  
+3. Achieved a higher test score
 
+## **Recommendations** 
 
+- **Training Program**:
+ - Conduct experiments on reimbursing transportation costs for employees who participate in the training program
+ 
+ - Focus on developing soft skills, particularly networking and communication, to boost promotion prospects
+  
+ - Customize training to engage top performers for better career advancement opportunities
+  
 
-
+- **Instrumental Variable Analysis**:
+ - Improve the randomization in selecting treatment and control group to avoid imbalance in covariates that could cause confounding issues
 
