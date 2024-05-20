@@ -40,9 +40,12 @@ The dataset comprises 6,000 employee records with the following attributes:
 -disthome: Distance from training facility to employee's home  
 -testscore: Score in a standard test during the recruitment process  
 
-### Data Processing
-![WhatsApp Image 2024-05-19 at 23 39 34_3823a68d](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/f348a86b-9e76-45eb-a7f7-4a230885c689)  
+### Data Processing  
 Due to the skewness of features, we applied log transformation to satisfy the normality assumption that statistical tests require.
+![WhatsApp Image 2024-05-19 at 23 39 34_3823a68d](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/f348a86b-9e76-45eb-a7f7-4a230885c689)  
+
+The following graphs show the effect of log transformation on the distribution of features.  
+![WhatsApp Image 2024-05-19 at 23 44 22_0e216f66](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/2fdc309f-2289-4364-87ec-858175107e6a)
 
 
 ## *Exploratory Data Analysis*
@@ -64,6 +67,7 @@ Compute standardized mean difference to assess if each covariate 𝑗 has simila
 
 ![WhatsApp Image 2024-05-19 at 23 31 48_f8f69b05](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/c7bad05d-48f7-447a-87ca-a2ad58c16482)
 
+- When SMD is 
 
 
 
