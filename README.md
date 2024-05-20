@@ -40,7 +40,7 @@ The dataset comprises 6,000 employee records with the following attributes:
 -disthome: Distance from training facility to employee's home  
 -testscore: Score in a standard test during the recruitment process  
 
-### Data Processing  
+### **Data Processing**  
 Due to the skewness of features, we applied log transformation to satisfy the normality assumption that statistical tests require.
 ![WhatsApp Image 2024-05-19 at 23 39 34_3823a68d](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/f348a86b-9e76-45eb-a7f7-4a230885c689)  
 
@@ -48,7 +48,7 @@ The following graphs show the effect of log transformation on the distribution o
 ![WhatsApp Image 2024-05-19 at 23 44 22_0e216f66](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/2fdc309f-2289-4364-87ec-858175107e6a)
 
 
-## *Exploratory Data Analysis*
+## **Exploratory Data Analysis**
 
 - Approximately 38.2% (N = 2,291) participated in the Career 2030 training program, while 61.8% (N = 3,709) did not participate.
 - Managers represent 14.4% (N = 864) of the workforce, with non-managers making up 85.6% (N = 5,136).
@@ -58,7 +58,7 @@ The following graphs show the effect of log transformation on the distribution o
 
 ![WhatsApp Image 2024-05-19 at 22 00 21_5cca2e84](https://github.com/BradleyGe/A-B-Testing-on-the-Impact-Evaluation-of-ACME-s-Career-2030-Training-Program/assets/141160516/4672d1cb-de75-4759-8bdb-b28984ef0fa3)
 
-## *Standardized Mean Difference*
+## **Standardized Mean Difference**
 Compute standardized mean difference to assess if each covariate 𝑗 has similar means between matched treatment 𝑇 and control 𝐶 groups 
 
 - Balanced: 𝑆𝑀𝐷𝑗 < 0.1
