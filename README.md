@@ -14,12 +14,34 @@ Your analytics consulting group, specializing in causal inference, is one of six
 ## *Data*
 
 ### Raw Data
-[Kaggle] https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction
-1. Application History: 18 features, 438,557 rows
-![WhatsApp Image 2024-05-18 at 22 28 14_43a057b0](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/c60b7ae6-1247-4f09-ae7e-6183f2175d27)
+Available Data
+The dataset comprises 6,000 employee records with the following attributes:
 
-2. Credit: 3 features, 1,048,575 rows  
-![WhatsApp Image 2024-05-18 at 22 21 57_60e7529b](https://github.com/BradleyGe/Credit-Card-Approval-Prediction-Project/assets/141160516/cd17a64d-3942-45fd-a854-a2f392fa7e5d)  
+empid: Employee ID
+promoted: Whether the employee was promoted within a year of training
+training: Participation in the Career 2030 program
+manager: Employee managerial status
+raise: Merit increase in the last review cycle
+salary: Employee's salary bracket
+children: Number of children
+mstatus: Marital status
+age: Age at promotion
+sex: Gender
+edu: Years of education at promotion
+vacation: Vacation days taken in the year prior to promotion
+weight: Weight at the last physical examination
+height: Height at the last physical examination
+hrfriend: Friend within the Human Resources department
+cxofriend: C-level friend within the organization
+insurance: Type of insurance coverage
+flexspend: Participation in the Flexible Spending Account program
+retcont: Participation in the 401k retirement saving program
+race: Race
+disthome: Distance from training facility to employee's home
+testscore: Score in a standard test during the recruitment process
+
+
+
 
 ## *Data Preparation*
 
